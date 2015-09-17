@@ -1,0 +1,51 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{}
+
+class Prison
+{
+private:
+	int beds;
+	int prisoners;
+	int cells;
+public:
+	void set_beds(int beds1)  { beds = beds1; } // setter
+	int get_beds()const { return beds; }       // getter
+	
+	int get_prisoners() { return prisoners; }
+	
+	int get_cells() { return cells; }
+
+
+	Prison(){ cells = 40; }; // declares how many cell in the prison
+
+};
+
+class Prisoners
+{
+protected:
+	int sentencemonths;
+	int timeserved;
+	int timetorelease;
+	int numberofchildren;
+
+	string address, visitors;
+
+	float hoursworked, payrate, balance, cellnumber, health;
+};
+
+class Guards
+{
+public:
+	int favoriteweapon;
+	int steroiduse; 
+	int placetobeatprisoners;
+	int numberofinfractions;
+	int contraband;
+	int probstatus;
+	int gangaffliation;
+};
